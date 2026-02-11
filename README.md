@@ -10,7 +10,7 @@
 ## 📋 Executive Summary
 In persistent virtual worlds (MMOs), players generate wealth infinitely (killing monsters), but wealth sinks (repair bills) are static. This leads to **Hyperinflation**, rendering currency worthless and destroying the new player experience.
 
-**The Solution:** The **Genesis Economy Regulator** acts as an autonomous Central Bank. It utilizes **Control Theory (Feedback Loops)** to monitor the Global Money Supply in real-time. If inflation spikes—whether due to a "Gold Rush" trend or a massive "Whale Deposit"—the AI dynamically adjusts the Transaction Tax (Burn Rate) to stabilize the economy automatically.
+**The Solution:** The **Genesis Economy Regulator** acts as an autonomous Central Bank. It utilizes **Control Theory (Feedback Loops)** to monitor the Global Money Supply in real-time. If inflation spikes—whether due to a "Gold Rush" trend or a massive "Whale Deposit", the AI dynamically adjusts the Transaction Tax (Burn Rate) to stabilize the economy automatically.
 
 ---
 
@@ -72,5 +72,6 @@ $K_p$: The Proportional Gain (Aggressiveness of the AI strategy)
 
 
 Author: Ryan Gilbert
+
 
 Generative AI Engineer & Systems Architect
