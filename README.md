@@ -1,70 +1,80 @@
-# 💰 Genesis Module 1: AI Central Banker (Economy Regulator)
+# 💰 Genesis Economy Regulator: The Command Center (Module 1 & 2)
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b)
-![Theory](https://img.shields.io/badge/Theory-Control_Systems_(PID)-orange)
-![Status](https://img.shields.io/badge/Status-Prototype_Complete-green)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![React](https://img.shields.io/badge/React-18-61dafb)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)
+![MongoDB](https://img.shields.io/badge/MongoDB-Cloud-47A248)
+![Status](https://img.shields.io/badge/Status-Module_2_Complete-green)
 
-> **"Inflation is the silent killer of MMOs. This AI fixes it."**
+> **"Inflation is the silent killer of MMOs. This AI fixes it—and now it has a Command Center."**
 
 ## 📋 Executive Summary
-In persistent virtual worlds (MMOs), players generate wealth infinitely (killing monsters), but wealth sinks (repair bills) are static. This leads to **Hyperinflation**, rendering currency worthless and destroying the new player experience.
+In persistent virtual worlds, wealth sinks are often static, leading to **Hyperinflation**. The **Genesis Economy Regulator** acts as an autonomous Central Bank.
 
-**The Solution:** The **Genesis Economy Regulator** acts as an autonomous Central Bank. It utilizes **Control Theory (Feedback Loops)** to monitor the Global Money Supply in real-time. If inflation spikes, whether due to a "Gold Rush" trend or a massive "Whale Deposit", the AI dynamically adjusts the Transaction Tax (Burn Rate) to stabilize the economy automatically.
-
----
-
-## 🚀 Key Features
-* **🤖 PID Control Logic:** Detects error (Inflation vs. Target) and applies proportional force (Tax Rate) to correct it.
-* **📉 Stress Testing Engine:** Simulate economic shocks like **Gold Rushes** (Trends) and **Whale Deposits** (Impulse Shocks) to validate system resilience.
-* **🧠 Multi-Model AI Strategies:** Compare different regulation behaviors:
-    * **🦅 The Hawk:** Aggressive, high-tax, instant reaction.
-    * **🕊️ The Dove:** Conservative, low-tax, prioritizes player happiness.
-    * **⚖️ The Balanced:** The optimal middle ground.
-* **📊 Live Telemetry:** Real-time dashboard visualization of Money Supply vs. Tax Rate.
+While **Module 1** established the PID Control Logic and economic theory, **Module 2** (The Command Center) integrates this "Brain" into a professional full-stack architecture. [cite_start]The system now autonomously monitors the economy, stores state in the cloud, and provides a real-time HUD for regulators to trigger intervention quests. 
 
 ---
 
-## 🛠️ System Architecture
+## 🚀 Key Features (Updated)
+* **🤖 PID Control Logic:** Detects inflation errors and adjusts the Tax Rate (Burn Rate) automatically.
+* **🌐 Full-Stack Dashboard:** A high-fidelity React HUD that communicates with the Python backend in real-time.
+* **☁️ Persistence:** Integrated with MongoDB Atlas to store economic history and generated quest directives.
+* **🧠 Gemini AI Integration:** Uses Generative AI to transform dry economic data into immersive, lore-accurate "Gold Sink" quests.
+* **⚡ Live Simulation Trigger:** A "God Mode" button that advances the economic cycle by 1 month and generates new directives instantly.
 
-The system operates on a closed-loop feedback cycle.
+---
+
+## 🛠️ System Architecture (v2.0)
+
 
 ```mermaid
-graph TD
-    A[World Economy] -->|Generates Gold| B(Total Money Supply)
-    B -->|Sensor Data| C{AI Regulator}
-    C -->|Compare to Target| D[Decision Logic]
-    D -->|Adjust Burn Rate| E[Transaction Tax]
-    E -->|Removes Gold| A
+graph LR
+    A[React Frontend] <-->|API Calls| B[FastAPI Backend]
+    B <-->|Cloud Storage| C[(MongoDB Atlas)]
+    B -->|Lore Request| D[Gemini AI]
+    B -->|Math Logic| E[Python PID Engine]
 ```
 
 ## 💻 Tech Stack
-Core Logic: Python 3.10
+* Frontend: React, Tailwind CSS, Lucide Icons
+* Backend: Python 3.10+, FastAPI, Uvicorn
+* AI: Google Gemini (Generative AI)
+* Database: MongoDB Atlas (NoSQL)
+* Logic: Control Systems Engineering & Macro-Economics
 
-Data Processing: Pandas (Time-series analysis)
+## 🏃 Getting Started (v2.0)
 
-Visualization: Streamlit
-
-Theory: Control Systems Engineering & Macro-Economics
-
-## 🏃 Getting Started
-1. Clone the Repository
+1. Clone & Setup
 ```Bash
 git clone [https://github.com/ryangilbert-github/genesis-economy-regulator.git](https://github.com/ryangilbert-github/genesis-economy-regulator.git)
 cd genesis-economy-regulator
 ```
-2. Install Dependencies
-```Bash
-pip install pandas numpy streamlit
+2. Powering the "Brain" (Python Backend)
+The backend handles the PID control logic, MongoDB connection, and Gemini AI integration.
+
+* Install Python dependencies
+```bash
+pip install -r requirements.txt
 ```
-3. Run the Simulation Dashboard
-```Bash
-python -m streamlit run economy_dashboard.py
+* Launch the FastAPI server
+```bash
+uvicorn src.api:app --reload
 ```
+The API will be live at http://127.0.0.1:8000
+
+3. Powering the "HUD" (React Frontend)
+The frontend provides the visual Command Center for the regulator.
+```Bash
+cd frontend
+npm install
+npm run dev
+```
+The Dashboard will be live at http://localhost:5173
 
 ## 📊 The Math (Control Logic)
 The AI operates on a simplified Feedback Control loop:
 $$ \text{Tax}{new} = \text{Tax}{old} + K_p \times (\text{Inflation} - \text{Target}) $$
+
 Where:
 Inflation: Current Money Supply ($M_1$)
 Target: Ideal Baseline
@@ -73,6 +83,4 @@ $K_p$: The Proportional Gain (Aggressiveness of the AI strategy)
 
 Author: Ryan Gilbert
 
-
 Generative AI Engineer & Systems Architect
-
