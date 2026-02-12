@@ -1,3 +1,116 @@
+Skip to content
+ryangilbert-github
+genesis-economy-regulator
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+genesis-economy-regulator/presentation
+/
+Post_Report_Balanced_AI.md
+in
+main
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+No wrap
+Editing Post_Report_Balanced_AI.md file contents
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
 # 📑 Genesis Module 1: Stress Test Analysis Report
 **Subject:** Failure Analysis of "Balanced" Regulator Strategy under High-Impulse Conditions  
 **Date:** February 10, 2026  
@@ -79,3 +192,6 @@ graph LR
 
 **Signed:** Ryan Gilbert
 Lead Generative AI Engineer, Project Genesis
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+No file chosen
+Attach files by dragging & dropping, selecting or pasting them.

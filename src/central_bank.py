@@ -14,35 +14,30 @@ class CentralBankAI:
         current = economy.money_supply
         target = economy.inflation_target
 
-        # --- STRATEGY 1: LAISSEZ-FAIRE (Control Group) ---
-        if "Laissez" in self.strategy:
-            return 0.05  # Fixed 5% tax forever.
-
-        # --- STRATEGY 2: THE HAWK (Aggressive) ---
+        # --- STRATEGY 1: THE HAWK (Aggressive) ---
         if "Hawk" in self.strategy:
-            # Reacts early (5% inflation) and hits hard
-            if current > target * 1.05:
-                # Panic Mode: Raises tax drastically!
-                step = 0.05 if current > target * 1.20 else 0.02
-                economy.tax_rate = min(0.99, economy.tax_rate + step)
-            elif current < target * 0.95:
-                economy.tax_rate = max(0.01, economy.tax_rate - 0.02)
+            # Panic Early: If inflation > 1%, slam the brakes
+            if current > target * 1.01:
+                # VIOLENT BRAKING: +15% Tax instantly
+                economy.tax_rate = min(0.90, economy.tax_rate + 0.15)
+            elif current < target * 0.99:
+                economy.tax_rate = 0.01
 
-        # --- STRATEGY 3: THE DOVE (Conservative) ---
+        # --- STRATEGY 2: THE DOVE (Passive) ---
         elif "Dove" in self.strategy:
-            # Waits for 20% inflation before moving
-            if current > target * 1.20:
-                # Gentle touches only
-                step = 0.02 if current > target * 1.50 else 0.005
-                economy.tax_rate = min(0.30, economy.tax_rate + step)  # Cap at 30% tax
-            elif current < target * 0.80:
-                economy.tax_rate = max(0.01, economy.tax_rate - 0.005)
+            # Wait until inflation is HUGE (>50%) before doing anything
+            if current > target * 1.50:
+                # TINY STEPS: +0.1% Tax only
+                economy.tax_rate = min(0.20, economy.tax_rate + 0.001)
+            elif current < target * 0.90:
+                economy.tax_rate = max(0.01, economy.tax_rate - 0.01)
 
-        # --- STRATEGY 4: BALANCED (Standard) ---
+        # --- STRATEGY 3: BALANCED (Standard) ---
         else:
+            # The Goldilocks Zone
             if current > target * 1.10:
-                step = 0.05 if current > target * 1.50 else 0.01
-                economy.tax_rate = min(0.50, economy.tax_rate + step)
+                # Moderate Ramp: +2% Tax
+                economy.tax_rate = min(0.50, economy.tax_rate + 0.02)
             elif current < target * 0.90:
                 economy.tax_rate = max(0.01, economy.tax_rate - 0.01)
 

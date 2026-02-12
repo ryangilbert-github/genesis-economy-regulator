@@ -1,0 +1,26 @@
+[
+    {
+        "id": "20260211-171426",
+        "filename": "The_Archmage_s_Gilded_Sacrifice_20260211-171426.json",
+        "title": "The Archmage's Gilded Sacrifice",
+        "type": "Gold Sink",
+        "objective": "Donate 5,000,000 Gold to the Sacred Crucible in the Capital City to reach the global server goal.",
+        "generated_at": "2026-02-11 17:14:26"
+    },
+    {
+        "id": "20260211-171512",
+        "filename": "The_Great_Reconstruction_of_the_Eternal_Citadel_20260211-171512.json",
+        "title": "The Great Reconstruction of the Eternal Citadel",
+        "type": "Gold Sink",
+        "objective": "Donate 1,000,000 Gold pieces to the Royal Construction Fund located in the city center.",
+        "generated_at": "2026-02-11 17:15:12"
+    },
+    {
+        "id": "20260211-171529",
+        "filename": "The_Great_Alchemical_Transmutation_20260211-171529.json",
+        "title": "The Great Alchemical Transmutation",
+        "type": "Gold Sink",
+        "objective": "Contribute 1,000,000 gold pieces to the Alchemical Furnaces in any major city.",
+        "generated_at": "2026-02-11 17:15:29"
+    }
+]
